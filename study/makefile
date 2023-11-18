@@ -1,7 +1,7 @@
-all: pcap
+all: information
 
-pcap: main.c
-		gcc -o pcap main.c -lpcap
+information: information.c
+		gcc -o information information.c -lpcap -g -fsanitize=address
 
 clean:
-		rm -f pcap
+		rm -f information
