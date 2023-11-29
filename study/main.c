@@ -54,11 +54,6 @@ int main(int argc, char *argv[])
 			  printf("pcap_next_ex return %d(%s)\n", res, pcap_geterr(pcap));
 			  break;
 		  }
-
-      /*    
-      여기서부터 코드 작성
-      */
-
     }
     pcap_close(pcap);
 }
